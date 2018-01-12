@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout aplicado à tela inicial -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sony.acc.MainActivity">
+
+    <!-- Adiciona o título à tela inicial -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:text="@string/Titulo"/>
+
+    <!-- Adiciona o visor da aceleração do eixo X -->
+    <TextView
+        android:id="@+id/visorDoTextoX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo"
+        android:text="@string/X"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/visorDoTextoY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/visorDoTextoX"
+        android:text="@string/Y"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        />
+
+    <TextView
+        android:id="@+id/visorDoTextoZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/visorDoTextoY"
+        android:text="@string/Z"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        />
+
+</RelativeLayout>
+
