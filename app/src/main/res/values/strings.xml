@@ -6,4 +6,6 @@
     <string name="Titulo">Titulo</string>
     <string name="Y">Y</string>
     <string name="Z">Z</string>
+    <string name="salvarBotao">Salvar</string>
+    <string name="Salvar">Salvar</string>
 </resources>

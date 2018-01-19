@@ -4,9 +4,10 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -43,7 +44,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
-        //método não utilizado - chamado quando a precisão do acelerômetro é modificada
+        /*método não utilizado - chamado pois todos códigos utilizados como exemplo
+         *apresentam este método
+        */
 
     }
 
@@ -55,6 +58,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         visorDoTextoZ.setText("Z= " + sensorEvent.values[2]);
 
     }
+
+    //Estabelece o método para acionar o botão de salvamento de dados
+    //Liga o código java com o botão adicionado na interface
+    //final Button salvarDadosButton = findViewById(R.id.salvarBotao);
+
+    //Cria um objeto de arquivo
+    //File AceleracaoTxt = new File;
 
 
 }
